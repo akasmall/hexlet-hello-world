@@ -4,6 +4,17 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
+
+packages = [
+  { include = "hexlet_hello_world" },
+]
+
 dependencies = [
     "more-itertools>=10.6.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "pytest>=8.3.4",
 ]
